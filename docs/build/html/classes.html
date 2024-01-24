@@ -1,0 +1,534 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>classes package &mdash; FaceRecognition 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="FaceRecognition 1.0.0 documentation" href="index.html"/> 
+
+  
+  <script src="static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> FaceRecognition
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">classes package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-classes.auxiliary">classes.auxiliary module</a></li>
+<li><a class="reference internal" href="#module-classes.ensemble">classes.ensemble module</a></li>
+<li><a class="reference internal" href="#module-classes.face_recognition">classes.face_recognition module</a></li>
+<li><a class="reference internal" href="#module-classes.report">classes.report module</a></li>
+<li><a class="reference internal" href="#module-classes.voting">classes.voting module</a></li>
+<li><a class="reference internal" href="#module-classes">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">FaceRecognition</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>classes package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="sources/classes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="classes-package">
+<h1>classes package<a class="headerlink" href="#classes-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-classes.auxiliary">
+<span id="classes-auxiliary-module"></span><h2>classes.auxiliary module<a class="headerlink" href="#module-classes.auxiliary" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="classes.auxiliary.Auxiliary">
+<em class="property">class </em><code class="descclassname">classes.auxiliary.</code><code class="descname">Auxiliary</code><span class="sig-paren">(</span><em>sizeX=100</em>, <em>sizeY=100</em>, <em>interpolation=2</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/auxiliary.html#Auxiliary"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.auxiliary.Auxiliary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class that provides some auxiliary functions.</p>
+<dl class="method">
+<dt id="classes.auxiliary.Auxiliary.calcAccuracy">
+<code class="descname">calcAccuracy</code><span class="sig-paren">(</span><em>recognizedImages</em>, <em>totalFaceImages</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/auxiliary.html#Auxiliary.calcAccuracy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.auxiliary.Auxiliary.calcAccuracy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the accuracy (percentage) using the formula:
+acc = recognizedImages / totalFaceImages * 100
+:param recognizedImages: The number of recognized face images.
+:param totalFaceImages: The number of total face images.
+:return: The accuracy.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.auxiliary.Auxiliary.concatenateImages">
+<code class="descname">concatenateImages</code><span class="sig-paren">(</span><em>leftImage</em>, <em>rightImage</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/auxiliary.html#Auxiliary.concatenateImages"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.auxiliary.Auxiliary.concatenateImages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Concatenate two images side by side (horizontally) and returns a new one.
+:param leftImage: The image that should be put to the left.
+:param rightImage: The image that should be put to the right.
+:return: The new concatenated image.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.auxiliary.Auxiliary.extractFilesPaths">
+<code class="descname">extractFilesPaths</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/auxiliary.html#Auxiliary.extractFilesPaths"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.auxiliary.Auxiliary.extractFilesPaths" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract all paths for all files type.
+:param path: The directory path.
+:return: A list with all paths for all files.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.auxiliary.Auxiliary.extractImagesPaths">
+<code class="descname">extractImagesPaths</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/auxiliary.html#Auxiliary.extractImagesPaths"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.auxiliary.Auxiliary.extractImagesPaths" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract all paths for each image in a directory.
+:param path: The directory path.
+:return: A list with all file paths.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.auxiliary.Auxiliary.getDefaultSize">
+<code class="descname">getDefaultSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/auxiliary.html#Auxiliary.getDefaultSize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.auxiliary.Auxiliary.getDefaultSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the default image size defined (default is 100x100).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.auxiliary.Auxiliary.getInterpolationMethodName">
+<code class="descname">getInterpolationMethodName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/auxiliary.html#Auxiliary.getInterpolationMethodName"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.auxiliary.Auxiliary.getInterpolationMethodName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the selected interpolation method name.
+:return: A string containing the interpolation method name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.auxiliary.Auxiliary.isGrayscale">
+<code class="descname">isGrayscale</code><span class="sig-paren">(</span><em>image</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/auxiliary.html#Auxiliary.isGrayscale"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.auxiliary.Auxiliary.isGrayscale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if an image is in grayscale.
+:param image: The image.
+:return: True if the image is in grayscale.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.auxiliary.Auxiliary.loadAllImagesForTest">
+<code class="descname">loadAllImagesForTest</code><span class="sig-paren">(</span><em>testPath</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/auxiliary.html#Auxiliary.loadAllImagesForTest"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.auxiliary.Auxiliary.loadAllImagesForTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load all images for test.
+:param testPath: The test path.
+:return: Three lists with the images, labels and file names.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.auxiliary.Auxiliary.loadAllImagesForTrain">
+<code class="descname">loadAllImagesForTrain</code><span class="sig-paren">(</span><em>trainPath</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/auxiliary.html#Auxiliary.loadAllImagesForTrain"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.auxiliary.Auxiliary.loadAllImagesForTrain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load all images for training.
+:param trainPath: The train path.
+:return: Three lists with the images, labels and file names.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.auxiliary.Auxiliary.loadImage">
+<code class="descname">loadImage</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/auxiliary.html#Auxiliary.loadImage"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.auxiliary.Auxiliary.loadImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load an image based on the path passed by parameter.
+:param path: The path to the image file.
+:return: The image object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.auxiliary.Auxiliary.preprocessImage">
+<code class="descname">preprocessImage</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/auxiliary.html#Auxiliary.preprocessImage"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.auxiliary.Auxiliary.preprocessImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Preprocess an image. Load an image, convert to grayscale and resize it.
+:param path: The image path.
+:return: The preprocessed image.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.auxiliary.Auxiliary.resizeImage">
+<code class="descname">resizeImage</code><span class="sig-paren">(</span><em>image</em>, <em>sizeX</em>, <em>sizeY</em>, <em>interpolationMethod</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/auxiliary.html#Auxiliary.resizeImage"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.auxiliary.Auxiliary.resizeImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resize an image.
+:param image: The image object.
+:param sizeX: The image width.
+:param sizeY: The image height.
+:param interpolationMethod: The interpolation method.
+:return: The resized image.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.auxiliary.Auxiliary.saveImage">
+<code class="descname">saveImage</code><span class="sig-paren">(</span><em>fileName</em>, <em>image</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/auxiliary.html#Auxiliary.saveImage"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.auxiliary.Auxiliary.saveImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save an image based on the fileName passed by parameter.
+:param fileName: The file name.
+:param image: The image.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.auxiliary.Auxiliary.setDefaultSize">
+<code class="descname">setDefaultSize</code><span class="sig-paren">(</span><em>sizeX</em>, <em>sizeY</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/auxiliary.html#Auxiliary.setDefaultSize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.auxiliary.Auxiliary.setDefaultSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the default size.
+:param sizeX: Image width.
+:param sizeY: Image height.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.auxiliary.Auxiliary.toGrayscale">
+<code class="descname">toGrayscale</code><span class="sig-paren">(</span><em>image</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/auxiliary.html#Auxiliary.toGrayscale"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.auxiliary.Auxiliary.toGrayscale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert an image to grayscale
+:param image: The image.
+:return: The image in grayscale.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.auxiliary.Auxiliary.writeTextFile">
+<code class="descname">writeTextFile</code><span class="sig-paren">(</span><em>content</em>, <em>fileName</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/auxiliary.html#Auxiliary.writeTextFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.auxiliary.Auxiliary.writeTextFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write the content to a text file based on the file name.
+:param content: The content as a string.
+:param fileName: The file name (e.g. home/user/test.txt)</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-classes.ensemble">
+<span id="classes-ensemble-module"></span><h2>classes.ensemble module<a class="headerlink" href="#module-classes.ensemble" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="classes.ensemble.Ensemble">
+<em class="property">class </em><code class="descclassname">classes.ensemble.</code><code class="descname">Ensemble</code><span class="sig-paren">(</span><em>fralgorithms=[]</em>, <em>auxiliary=&lt;classes.auxiliary.Auxiliary instance&gt;</em>, <em>voting=&lt;classes.voting.Voting instance&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/ensemble.html#Ensemble"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.ensemble.Ensemble" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class that provides an interface for the Ensemble</p>
+<dl class="method">
+<dt id="classes.ensemble.Ensemble.recognizeFaces">
+<code class="descname">recognizeFaces</code><span class="sig-paren">(</span><em>testPath</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/ensemble.html#Ensemble.recognizeFaces"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.ensemble.Ensemble.recognizeFaces" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that tries to recognize each face (path passed by parameter).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.ensemble.Ensemble.reset">
+<code class="descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/ensemble.html#Ensemble.reset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.ensemble.Ensemble.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset all lists and results.
+It is used to reset all values to re-train the algorithm</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.ensemble.Ensemble.resetResults">
+<code class="descname">resetResults</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/ensemble.html#Ensemble.resetResults"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.ensemble.Ensemble.resetResults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset results (including the test lists and the predictions)
+It is used to reset only the results of the tests</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.ensemble.Ensemble.train">
+<code class="descname">train</code><span class="sig-paren">(</span><em>trainPath</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/ensemble.html#Ensemble.train"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.ensemble.Ensemble.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function responsible for train the face recognition algorithm based on the image files from the trainPath.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-classes.face_recognition">
+<span id="classes-face-recognition-module"></span><h2>classes.face_recognition module<a class="headerlink" href="#module-classes.face_recognition" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="classes.face_recognition.FaceRecognition">
+<em class="property">class </em><code class="descclassname">classes.face_recognition.</code><code class="descname">FaceRecognition</code><span class="sig-paren">(</span><em>algorithm</em>, <em>auxiliary=&lt;classes.auxiliary.Auxiliary instance&gt;</em>, <em>threshold=-1</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/face_recognition.html#FaceRecognition"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.face_recognition.FaceRecognition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class that provides an interface to the face recognition algorithms</p>
+<dl class="method">
+<dt id="classes.face_recognition.FaceRecognition.recognizeFaces">
+<code class="descname">recognizeFaces</code><span class="sig-paren">(</span><em>testPath</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/face_recognition.html#FaceRecognition.recognizeFaces"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.face_recognition.FaceRecognition.recognizeFaces" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that tries to recognize each face (path passed by parameter).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.face_recognition.FaceRecognition.reset">
+<code class="descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/face_recognition.html#FaceRecognition.reset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.face_recognition.FaceRecognition.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset all values, including train and test paths</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.face_recognition.FaceRecognition.resetResults">
+<code class="descname">resetResults</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/face_recognition.html#FaceRecognition.resetResults"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.face_recognition.FaceRecognition.resetResults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset all results</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.face_recognition.FaceRecognition.train">
+<code class="descname">train</code><span class="sig-paren">(</span><em>trainPath</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/face_recognition.html#FaceRecognition.train"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.face_recognition.FaceRecognition.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function responsible for train the face recognition algorithm based on the image files from the trainPath.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-classes.report">
+<span id="classes-report-module"></span><h2>classes.report module<a class="headerlink" href="#module-classes.report" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="classes.report.Report">
+<em class="property">class </em><code class="descclassname">classes.report.</code><code class="descname">Report</code><span class="sig-paren">(</span><em>object</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/report.html#Report"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.report.Report" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class that provides an interface to generate reports</p>
+<dl class="method">
+<dt id="classes.report.Report.generateFullReport">
+<code class="descname">generateFullReport</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/report.html#Report.generateFullReport"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.report.Report.generateFullReport" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate the full report.
+Return the content containing the information about each predicted image.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.report.Report.generateReportSummary">
+<code class="descname">generateReportSummary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/report.html#Report.generateReportSummary"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.report.Report.generateReportSummary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a report summary with informations about the test.
+Return the content as a string.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.report.Report.printResults">
+<code class="descname">printResults</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/report.html#Report.printResults"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.report.Report.printResults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function used to show the results</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.report.Report.saveAllResults">
+<code class="descname">saveAllResults</code><span class="sig-paren">(</span><em>path=”</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/report.html#Report.saveAllResults"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.report.Report.saveAllResults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function used to automatically save the report in a defined folder.
+Save the entire results, including the summary report, full report and all images.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.report.Report.saveReport">
+<code class="descname">saveReport</code><span class="sig-paren">(</span><em>path=”</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/report.html#Report.saveReport"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.report.Report.saveReport" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function used to automatically save the report in a defined folder.
+Save only the text report not the images.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-classes.voting">
+<span id="classes-voting-module"></span><h2>classes.voting module<a class="headerlink" href="#module-classes.voting" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="classes.voting.Voting">
+<em class="property">class </em><code class="descclassname">classes.voting.</code><code class="descname">Voting</code><span class="sig-paren">(</span><em>votingScheme=0</em>, <em>weights=[]</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/voting.html#Voting"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.voting.Voting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class the provides voting methods for the ensemble.</p>
+<dl class="attribute">
+<dt id="classes.voting.Voting.MAJORITY">
+<code class="descname">MAJORITY</code><em class="property"> = 0</em><a class="headerlink" href="#classes.voting.Voting.MAJORITY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="classes.voting.Voting.WEIGHTED">
+<code class="descname">WEIGHTED</code><em class="property"> = 1</em><a class="headerlink" href="#classes.voting.Voting.WEIGHTED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="classes.voting.Voting.getVotingSchemeName">
+<code class="descname">getVotingSchemeName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/voting.html#Voting.getVotingSchemeName"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.voting.Voting.getVotingSchemeName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the name of the selected voting scheme to be used in the report.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.voting.Voting.majorityVoting">
+<code class="descname">majorityVoting</code><span class="sig-paren">(</span><em>subjects</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/voting.html#Voting.majorityVoting"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.voting.Voting.majorityVoting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Majority voting.
+Return -1 for empty list</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.voting.Voting.vote">
+<code class="descname">vote</code><span class="sig-paren">(</span><em>subjects</em>, <em>weights=[]</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/voting.html#Voting.vote"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.voting.Voting.vote" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call the selected voting scheme</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="classes.voting.Voting.weightedVoting">
+<code class="descname">weightedVoting</code><span class="sig-paren">(</span><em>subjects</em>, <em>weights</em><span class="sig-paren">)</span><a class="reference internal" href="modules/classes/voting.html#Voting.weightedVoting"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#classes.voting.Voting.weightedVoting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Weighted voting.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-classes">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-classes" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, KelvinSP.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="static/jquery.js"></script>
+      <script type="text/javascript" src="static/underscore.js"></script>
+      <script type="text/javascript" src="static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
